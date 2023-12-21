@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-2ii4
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-grak-tenant/appstudio/devfile-sample-python-basic-2ii4@sha256:6e8b2cc39f8ae463ead701648c47bdef6d9eb49bef44a6316b12e54169316fbb
+        name: my-python
+        resources: {}
+status: {}
