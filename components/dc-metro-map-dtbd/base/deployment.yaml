@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: dc-metro-map-dtbd
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/qijing/push-pyxis-grak-tenant/appstudio/dc-metro-map-dtbd@sha256:a1344ae068feefeaea33d8543b438143d50e72f09d79df83012bdd0b88c3df8d
         name: my-nodejs
         ports:
         - containerPort: 3001
