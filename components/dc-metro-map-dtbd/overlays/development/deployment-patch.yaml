@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-dtbd
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-grak-tenant/appstudio/dc-metro-map-dtbd@sha256:a1344ae068feefeaea33d8543b438143d50e72f09d79df83012bdd0b88c3df8d
+        name: my-nodejs
+        resources: {}
+status: {}
